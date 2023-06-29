@@ -36,10 +36,10 @@
         </nav>
     </header>
 
-    <section id="banner">
+    <section id="banner" class="position-relative">
         <div class="container">
             <div class="row">
-                <div class="text-wrapper col-12 col-lg-8">
+                <div class="text-wrapper col-12 col-lg-7">
                     <header>
                         <h2>Bem-vinde a sua página sobre</h2>
                         <h1>Curiosidades do Android</h1>
@@ -49,8 +49,10 @@
                         <a href="#0"><i class="fa-solid fa-chevron-down"></i></a>
                     </div>
                 </div>
-                <div class="video-wrapper col-12 col-lg-4">
-                    VIDEO EM LOOP
+                <div class="video-wrapper col-12 col-lg-5">
+                    <video controls muted>
+                        <source src="assets/imagens/video-intro.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
@@ -84,16 +86,12 @@
             </div>
         </section>
 
-        <section id="criadora-mascote">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="content-wrapper col-12 col-lg-6">
-                        <header>
-                            <h2>Surge um novo mascote</h2>
-                        </header>
-                        <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
-                    </div>
-                </div>
+        <section id="criadora-mascote" class="d-flex align-items-md-center">
+            <div class="container">
+                <header>
+                    <h2>Surge um novo mascote</h2>
+                </header>
+                <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
             </div>
         </section>
 
@@ -178,7 +176,7 @@
     
 
     <footer>
-        <div class="container">
+        <div class="container text-center">
             <p>Site criado por <a href="">mapflo</a></p>
         </div>
     </footer>

@@ -8,3 +8,41 @@ img {
     width: 100%;
     max-width: 100%;
 }
+
+#banner {
+}
+
+#banner video {
+    width: 100%;
+    height: 100%;
+}
+
+#banner video source {    
+    
+}
+
+#criadora-mascote {
+    min-height: 588px;
+    background-image: url('../imagens/irina-blok-pq.jpg');
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) {
+    
+    #banner {
+        height: 100vh;
+    }
+    
+    #banner video {
+    }
+    
+    #banner video source {
+
+    }
+    
+    #criadora-mascote {
+        background-position: bottom right;
+    }
+}
