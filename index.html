@@ -36,10 +36,10 @@
         </nav>
     </header>
 
-    <section id="banner" class="position-relative">
+    <section id="banner" class="position-relative d-flex align-items-center">
         <div class="container">
-            <div class="row">
-                <div class="text-wrapper col-12 col-lg-7 z-1">
+            <div class="row d-flex align-items-center">
+                <div class="text-wrapper col-12 col-lg-7 z-1 text-white">
                     <header>
                         <h2>Bem-vinde a sua página sobre</h2>
                         <h1>Curiosidades do Android</h1>
@@ -50,10 +50,10 @@
                     </div>
                 </div>
                 <div class="video-wrapper position-absolute start-0 top-0">
-                    <video muted autoplay loop class="d-block d-lg-none">
+                    <video muted class="d-block d-lg-none">
                         <source src="assets/imagens/video-mobile.mp4" type="video/mp4">                       
                     </video>
-                    <video muted autoplay loop class="d-none d-lg-block">
+                    <video muted class="d-none d-lg-block">
                         <source src="assets/imagens/video-intro.mp4" type="video/mp4">                        
                     </video>
                 </div>
@@ -62,8 +62,8 @@
     </section>
 
     <main>
-        <section id="intro-mascote-android">
-            <div class="container">
+        <section id="intro-mascote-android" class="d-flex align-items-center">
+            <div class="container text-center">
                 <header>
                     <h2>História do Mascote do Android</h2>
                 </header>
@@ -71,40 +71,47 @@
             </div>
         </section>
 
-        <section id="v1-android">
+        <section id="v1-android" class="d-flex align-items-center">
             <div class="container">
-                <div class="content-wrapper">
+                <div class="col-12 col-lg-6 me-lg-auto">
                     <header>
                         <h2>A primeira versão</h2>
                     </header>
                     <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="">Dan Morrill</a>. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+                </div>
+                <picture class="content-img-wrapper">
+                    <source media="(min-width: 992px)" srcset="assets/imagens/dan-droids.png" type="image/png">
+                    <img src="assets/imagens/dan-droids-pq.png" alt="Primeira versão do mascote do Android">
+                </picture>
+                <div class="col-12 col-lg-6 ms-lg-auto text-lg-end">
                     <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
                 </div>
-                <div class="img-wrapper">
-                    <picture>
-                        <source media="(min-width: 992px)" srcset="assets/imagens/dan-droids.png" type="image/png">
-                        <img src="assets/imagens/dan-droids-pq.png" alt="Primeira versão do mascote do Android">
-                    </picture>
+            </div>
+        </section>
+
+        <section id="criadora-mascote" class="d-flex align-items-center position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="content-text-wrapper col-12 col-lg-6">
+                        <header>
+                            <h2>Surge um novo mascote</h2>
+                        </header>
+                        <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+                    </div>
+                    <figure class="content-img-wrapper col-12 col-lg-6 mb-0 px-0">
+                        <img class="h-100 object-fit-cover" src="assets/imagens/irina-blok-v2.jpg" alt="">
+                    </figure>
                 </div>
             </div>
         </section>
 
-        <section id="criadora-mascote" class="d-flex align-items-md-center">
-            <div class="container">
-                <header>
-                    <h2>Surge um novo mascote</h2>
-                </header>
-                <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
-            </div>
-        </section>
-
-        <section id="ideia">
+        <section id="ideia" class="d-flex align-items-center">
             <div class="container">
                 <h2>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha.</h2>
             </div>
         </section>
 
-        <section id="bugdroid">
+        <section id="bugdroid" class="d-flex justify-content-center align-items-center text-center">
             <div class="container">
                 <header>
                     <h2>Surgiu então o Bugdroid, o novo mascote do Android.</h2>
@@ -120,60 +127,64 @@
 
         <section id="extra">
             <div class="container">
-                <header>
-                    <h2>Quer aprender mais?</h2>
-                    <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
-                </header>
-                <div class="carousel-wrapper">
-                    <div class="swiper versoes">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide text-center">
-                                <figure>
-                                    <img src="assets/imagens/cupcake.svg" alt="Imagem de um cupcake">                    
-                                </figure>
-                                <h3>
-                                    <span class="nome">Cupcake</span>
-                                    <span class="versao">1.5</span>
-                                </h3>
-                                <p>Lançamento: 27 de abril de 2009</p>
+                <div class="row align-items-center">
+                    <header class="col-12 col-lg-6">
+                        <h2>Quer aprender mais?</h2>
+                        <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
+                    </header>
+                    <div class="carousel-wrapper col-12 col-lg-6">
+                        <div class="swiper versoes">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide text-center">
+                                    <figure>
+                                        <img src="assets/imagens/cupcake.svg" alt="Imagem de um cupcake">
+                                    </figure>
+                                    <h3>
+                                        <span class="nome">Cupcake</span>
+                                        <span class="versao">1.5</span>
+                                    </h3>
+                                    <p>Lançamento: 27 de abril de 2009</p>
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <figure>
+                                        <img src="assets/imagens/honeycomb.svg" alt="Imagem de um favo de mel">
+                                    </figure>
+                                    <h3>
+                                        <span class="nome">Honeycomb</span>
+                                        <span class="versao">3.0</span>
+                                    </h3>
+                                    <p>Lançamento: 22 de fevereiro de 2011</p>
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <figure>
+                                        <img src="assets/imagens/jellybean.svg" alt="Imagem de uma jujuba">
+                                    </figure>
+                                    <h3>
+                                        <span class="nome">Jelly Bean</span>
+                                        <span class="versao">4.1</span>
+                                    </h3>
+                                    <p>Lançamento: 9 de julho de 2012</p>
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <figure>
+                                        <img src="assets/imagens/oreo.svg" alt="Imagem de um oreo">
+                                    </figure>
+                                    <h3>
+                                        <span class="nome">Oreo</span>
+                                        <span class="versao">8.0</span>
+                                    </h3>
+                                    <p>Lançamento: 21 de agosto de 2017</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide text-center">
-                                <figure>
-                                    <img src="assets/imagens/honeycomb.svg" alt="Imagem de um favo de mel">                    
-                                </figure>
-                                <h3>
-                                    <span class="nome">Honeycomb</span>
-                                    <span class="versao">3.0</span>
-                                </h3>
-                                <p>Lançamento: 22 de fevereiro de 2011</p>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                <figure>
-                                    <img src="assets/imagens/jellybean.svg" alt="Imagem de uma jujuba">                    
-                                </figure>
-                                <h3>
-                                    <span class="nome">Jelly Bean</span>
-                                    <span class="versao">4.1</span>
-                                </h3>
-                                <p>Lançamento: 9 de julho de 2012</p>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                <figure>
-                                    <img src="assets/imagens/oreo.svg" alt="Imagem de um oreo">                    
-                                </figure>
-                                <h3>
-                                    <span class="nome">Oreo</span>
-                                    <span class="versao">8.0</span>
-                                </h3>
-                                <p>Lançamento: 21 de agosto de 2017</p>
-                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
-                <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
-                <p><a href="">Acesse aqui</a> o site Android History para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
+                <div class="text-lg-center">
+                    <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
+                    <p><a href="">Acesse aqui</a> o site Android History para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
+                </div>
             </div>
         </section>
 
@@ -194,10 +205,12 @@
                             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                             <label for="floatingInput">Email</label>
                         </div>
-                        <div class="form-floating">
+                        <div class="form-floating mb-3">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                             <label for="floatingTextarea2">Sua mensagem</label>
                         </div>
+
+                        <button type="submit" class="btn btn-dark">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -224,7 +237,7 @@
             },
             breakpoints: {
                 768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 0,
                 },
             },

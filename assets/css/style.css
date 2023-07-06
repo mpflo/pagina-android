@@ -16,13 +16,14 @@ body {
     font: 1.1em 'Work Sans', sans-serif;
 }
 
+h1, h2 { font-family: var(--fonte-destaque); }
+
 img {
     width: 100%;
     max-width: 100%;
 }
 
 section {
-    height: 100vh !important;
 }
 
 #banner {
@@ -37,7 +38,7 @@ section {
     left: 0;
     top: 0;
     z-index: 1;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 82%, rgba(0,0,0,.5) 100%, transparent 100%);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 42%, rgba(0,0,0,.5) 100%, transparent 100%);
     opacity: .9
 }
 
@@ -53,10 +54,15 @@ section {
 }
 
 #criadora-mascote {
-    background-image: url('../imagens/irina-blok-pq.jpg');
-    background-size: contain;
-    background-position: bottom center;
-    background-repeat: no-repeat;
+    
+}
+
+#criadora-mascote .content-img-wrapper {
+    
+}
+
+#criadora-mascote .content-img-wrapper img {
+    
 }
 
 #bugdroid {
@@ -85,14 +91,22 @@ section {
     object-fit: contain;
 }
 
+footer {
+    
+}
+
+footer a {
+    font-family: var(--fonte-destaque);
+}
+
 @media (min-width: 992px) {
+
+    section {
+        min-height: 504px
+    }
     
     #banner {
         
-    }
-    
-    #banner:before {
-        background: linear-gradient(180deg, rgba(0,0,0,1) 56%, rgba(0,0,0,.3) 100%, transparent 100%);
     }
     
     #banner video {
@@ -100,14 +114,21 @@ section {
     }
     
     #criadora-mascote {
-        background-position: bottom right;
+        
+    }
+    
+    #criadora-mascote .content-img-wrapper img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40%;
     }
 }
 
 @media (min-width: 1200px) {
     
     #banner:before {
-        background: linear-gradient(180deg, rgba(0,0,0,1) 72%, rgba(0,0,0,.6) 100%, transparent 100%)
+        background: linear-gradient(360deg, rgba(0,0,0,1) 22%, rgba(0,0,0,.6) 100%, transparent 100%)
     }
     
     #banner video {
