@@ -36,24 +36,21 @@
         </nav>
     </header>
 
-    <section id="banner" class="position-relative d-flex align-items-center">
+    <section id="banner" class="position-relative d-flex align-items-center py-5">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="text-wrapper col-12 col-lg-7 z-1 text-white">
+                <div class="col-12 col-lg-7 z-1 text-white py-5">
                     <header>
                         <h2>Bem-vinde a sua página sobre</h2>
-                        <h1>Curiosidades do Android</h1>
+                        <h1 class="my-3">Curiosidades do Android</h1>
                     </header>
                     <p>Tudo aquilo que você sempre quis saber sobre o mundo Android, em um único lugar</p>
-                    <div class="btn-wrapper">
-                        <a href="#0"><i class="fa-solid fa-chevron-down"></i></a>
-                    </div>
                 </div>
-                <div class="video-wrapper position-absolute start-0 top-0">
-                    <video muted class="d-block d-lg-none">
-                        <source src="assets/imagens/video-mobile.mp4" type="video/mp4">                       
-                    </video>
-                    <video muted class="d-none d-lg-block">
+                <div class="btn-wrapper z-1">
+                    <a href="#0"><i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+                <div class="video-wrapper position-absolute start-0 top-0">   
+                    <video muted>
                         <source src="assets/imagens/video-intro.mp4" type="video/mp4">                        
                     </video>
                 </div>
@@ -62,8 +59,8 @@
     </section>
 
     <main>
-        <section id="intro-mascote-android" class="d-flex align-items-center">
-            <div class="container text-center">
+        <section id="historia" class="d-flex align-items-center py-5">
+            <div class="container text-lg-center py-5">
                 <header>
                     <h2>História do Mascote do Android</h2>
                 </header>
@@ -71,19 +68,19 @@
             </div>
         </section>
 
-        <section id="v1-android" class="d-flex align-items-center">
+        <section id="v1-android" class="d-flex align-items-center py-5">
             <div class="container">
-                <div class="col-12 col-lg-6 me-lg-auto">
+                <div class="col-12 col-lg-6 me-lg-auto text-end text-lg-start">
                     <header>
                         <h2>A primeira versão</h2>
                     </header>
-                    <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="">Dan Morrill</a>. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+                    <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="#0" target="_blank">Dan Morrill</a>. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
                 </div>
-                <picture class="content-img-wrapper">
+                <picture class="d-flex justify-content-center">
                     <source media="(min-width: 992px)" srcset="assets/imagens/dan-droids.png" type="image/png">
                     <img src="assets/imagens/dan-droids-pq.png" alt="Primeira versão do mascote do Android">
                 </picture>
-                <div class="col-12 col-lg-6 ms-lg-auto text-lg-end">
+                <div class="col-12 col-lg-6 ms-lg-auto text-center text-lg-end">
                     <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
                 </div>
             </div>
