@@ -142,53 +142,67 @@
                         <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
                     </div>
                     
-                    <div class="carousel-wrapper col-12 col-lg-6">
+                    <div class="carousel-wrapper col-12 col-lg-6 position-relative">
                         <div class="swiper versoes">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide text-center">
-                                    <figure>
-                                        <img src="assets/imagens/cupcake.svg" alt="Imagem de um cupcake">
-                                    </figure>
-                                    <h3>
-                                        <span class="nome">Cupcake</span>
-                                        <span class="versao">1.5</span>
-                                    </h3>
-                                    <p>Lançamento: 27 de abril de 2009</p>
+                            <div class="swiper-wrapper py-5">
+                                <div class="swiper-slide text-center pb-2 pb-lg-0">
+                                    <div class="item">
+                                        <figure class="m-0">
+                                            <img src="assets/imagens/cupcake.svg" alt="Imagem de um cupcake">
+                                        </figure>
+                                        <h3>
+                                            <span class="nome">Cupcake</span>
+                                            <span class="versao">1.5</span>
+                                        </h3>
+                                        <p>Lançamento: 27 de abril de 2009</p>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide text-center">
-                                    <figure>
-                                        <img src="assets/imagens/honeycomb.svg" alt="Imagem de um favo de mel">
-                                    </figure>
-                                    <h3>
-                                        <span class="nome">Honeycomb</span>
-                                        <span class="versao">3.0</span>
-                                    </h3>
-                                    <p>Lançamento: 22 de fevereiro de 2011</p>
+                                <div class="swiper-slide text-center pb-2 pb-lg-0">
+                                    <div class="item">
+                                        <figure class="m-0">
+                                            <img src="assets/imagens/honeycomb.svg" alt="Imagem de um favo de mel">
+                                        </figure>
+                                        <h3>
+                                            <span class="nome">Honeycomb</span>
+                                            <span class="versao">3.0</span>
+                                        </h3>
+                                        <p>Lançamento: 22 de fevereiro de 2011</p>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide text-center">
-                                    <figure>
-                                        <img src="assets/imagens/jellybean.svg" alt="Imagem de uma jujuba">
-                                    </figure>
-                                    <h3>
-                                        <span class="nome">Jelly Bean</span>
-                                        <span class="versao">4.1</span>
-                                    </h3>
-                                    <p>Lançamento: 9 de julho de 2012</p>
+                                <div class="swiper-slide text-center pb-2 pb-lg-0">
+                                    <div class="item">
+                                        <figure class="m-0">
+                                            <img src="assets/imagens/jellybean.svg" alt="Imagem de uma jujuba">
+                                        </figure class="m-0">
+                                        <h3>
+                                            <span class="nome">Jelly Bean</span>
+                                            <span class="versao">4.1</span>
+                                        </h3>
+                                        <p>Lançamento: 9 de julho de 2012</p>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide text-center">
-                                    <figure>
-                                        <img src="assets/imagens/oreo.svg" alt="Imagem de um oreo">
-                                    </figure>
-                                    <h3>
-                                        <span class="nome">Oreo</span>
-                                        <span class="versao">8.0</span>
-                                    </h3>
-                                    <p>Lançamento: 21 de agosto de 2017</p>
+                                <div class="swiper-slide text-center pb-2 pb-lg-0">
+                                    <div class="item">
+                                        <figure class="m-0">
+                                            <img src="assets/imagens/oreo.svg" alt="Imagem de um oreo">
+                                        </figure>
+                                        <h3>
+                                            <span class="nome">Oreo</span>
+                                            <span class="versao">8.0</span>
+                                        </h3>
+                                        <p>Lançamento: 21 de agosto de 2017</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                            </div>                     
                         </div>
+                        <div class="d-none d-lg-block">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="d-lg-none">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="text-lg-center">
@@ -245,11 +259,15 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
             },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
             breakpoints: {
-                768: {
-            slidesPerView: 2,
-            spaceBetween: 0,
-                },
+                992: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+                    },
             },
         });
     </script>
