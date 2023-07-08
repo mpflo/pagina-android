@@ -135,8 +135,15 @@ section {
     
 }
 
+#ideia h2 {
+     font-family: var(--fonte-padrao);
+     margin: 0;
+     font-size: 28px;
+     white-space: nowrap;
+}
+
 #bugdroid {
-    
+   
 }
 
 #bugdroid .img-wrapper img {
