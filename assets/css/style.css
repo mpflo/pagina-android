@@ -60,6 +60,27 @@ a[target="_blank"]:hover:after {
 section {
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    font-size: 32px
+}
+
+.swiper-button-next:after { 
+    content: '\f138' !important; 
+}
+.swiper-button-prev:after { 
+    content: '\f137' !important; 
+}
+.swiper-button-next:after,
+.swiper-button-prev:after { 
+    font: var(--fa-font-solid) !important; 
+    color: var(--cor-04);
+}
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+    color: #403F3F;
+}
+
 #banner {
     overflow: hidden;
 }
