@@ -208,6 +208,10 @@ footer a {
         top: 0;
         width: 40%;
     }
+    
+    #ideia h2 {
+        white-space: normal;
+    }
 }
 
 @media (min-width: 1200px) {
