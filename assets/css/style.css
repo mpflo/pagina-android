@@ -142,11 +142,19 @@ section {
      white-space: nowrap;
 }
 
-#bugdroid {
-   
+#bugdroid h2 {
+   font: 24px var(--fonte-padrao);
+    margin-bottom: 0;
 }
 
-#bugdroid .img-wrapper img {
+#bugdroid h2 span {
+    font: 28px var(--fonte-destaque);
+}
+
+#bugdroid .content-img-wrapper {
+}
+
+#bugdroid .content-img-wrapper img {
     max-width: 304px;
 }
 
