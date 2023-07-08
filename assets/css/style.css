@@ -192,6 +192,10 @@ section {
     max-width: 304px;
 }
 
+#bugdroid p {
+    font-size: 1em;
+}
+
 #extra {
     background-color: var(--cor-05);
     color: var(--cor-04);
@@ -256,13 +260,57 @@ section {
     filter: saturate(100%);
 }
 
-footer {
+#extra .content-text-wrapper p {
+    font-size: .9em;
+}
+
+#extra .content-text-wrapper p:first-of-type {
+    margin-bottom: 12px;
+}
+
+#contato {
+    background: var(--cor-02);
+    color: var(--cor-01);
+}
+
+#contato form {
     
+}
+
+#contato form input,
+#contato form textarea {
+    background: rgba(255, 255, 255, .2);
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid var(--cor-01);
+}
+
+#contato .form-floating:not(.form-control:disabled)::before {
+    background: transparent;
+}
+
+#contato form button {
+    border-radius: 0;
+    border: 2px solid #fff;
+    background: transparent;
+}
+
+#contato form button:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+footer {
+    background: var(--cor-02);
+    color: var(--cor-01);
 }
 
 footer a {
     font-family: var(--fonte-destaque);
+    color: var(--cor-01) !important;
 }
+footer a:hover {}
 
 @media (min-width: 992px) {
 
