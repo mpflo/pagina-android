@@ -122,10 +122,12 @@ section {
 }
 
 #criadora-mascote {
-    
+    background-color: var(--cor-05);
+    color: var(--cor-04);
 }
 
 #criadora-mascote .content-img-wrapper {
+   
     
 }
 
