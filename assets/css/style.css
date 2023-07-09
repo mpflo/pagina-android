@@ -201,6 +201,10 @@ section {
     color: var(--cor-04);
 }
 
+#extra .carousel-wrapper {
+    max-width: 602px;
+}
+
 #extra .versoes {
     
 }
