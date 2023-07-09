@@ -248,15 +248,15 @@ nav button.btn-close:focus {
 }
 
 #ideia h2 {
-     font-family: var(--fonte-padrao);
-     margin: 0;
-     font-size: 28px;
-     white-space: nowrap;
+    font-family: var(--fonte-padrao);     
+    font-size: 28px;
+    margin: 0 20px;
+    min-height: 316px;
 }
 
 #bugdroid h2 {
    font: 24px var(--fonte-padrao);
-    margin-bottom: 0;
+   margin-bottom: 0;
 }
 
 #bugdroid h2 span {
@@ -460,6 +460,8 @@ footer a:hover {}
     
     #ideia h2 {
         font-size: 2.4em;
+        margin: 0;
+        min-height: auto;
     }
     
     #extra .versoes .swiper-slide .item {

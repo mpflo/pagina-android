@@ -103,17 +103,7 @@
 
         <section id="ideia" class="d-flex align-items-center py-5">
             <div class="container text-center text-lg-start py-5 py-lg-0">
-                <h2>
-                    A ideia principal<br class="d-lg-none">
-                    da Irina era representar<br>
-                    tudo graficamente<br class="d-lg-none">
-                    com poucos traços e de<br> 
-                    forma mais chapada.<br class="d-lg-none">
-                    O desenho também<br>
-                    deveria gerar<br class="d-lg-none"> 
-                    identificação rápida<br>
-                    com quem o olha.
-                </h2>
+                <h2 id="ideiaText"></h2>
             </div>
         </section>
 
@@ -243,8 +233,6 @@
         </section>
     </main>
 
-    
-
     <footer class="py-2">
         <div class="container text-center">
             <p>Site criado por <a href="https://github.com/mpflo" target="_blank">mapflo</a></p>
@@ -253,6 +241,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script type="text/javascript">
         var swiper = new Swiper(".versoes", {
@@ -272,6 +261,16 @@
                     },
             },
         });
-    </script>
+
+        var ideiaText = document.getElementById('ideiaText');
+
+        var typewriter = new Typewriter(ideiaText, {
+            loop: false,
+            delay: 44
+        });
+
+        typewriter.typeString('A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha...')            
+            .start();
+            </script>
 </body>
 </html>
