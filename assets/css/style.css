@@ -283,12 +283,21 @@ section {
 
 #contato form input,
 #contato form textarea {
-    background: rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, .1);
     border-radius: 0;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: 2px solid var(--cor-01);
+}
+
+#contato form label {
+    font-size: .8em;
+}
+
+#contato form input:focus,
+#contato form textarea:focus {
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, .2);
 }
 
 #contato .form-floating:not(.form-control:disabled)::before {
@@ -312,7 +321,7 @@ section {
     height: 0%;
     left: 0;
     top: 0;
-    transition: height linear 300ms;
+    transition: height ease 300ms;
 }
 
 #contato form button:hover:after {
