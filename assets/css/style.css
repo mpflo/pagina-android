@@ -397,8 +397,8 @@ footer a:hover {}
         background: linear-gradient(360deg, rgba(0,0,0,1) 22%, rgba(0,0,0,.6) 100%, transparent 100%)
     }
     
-    #banner video {
-        transform: scale(1.7);
+    #banner .video-wrapper video {
+        transform: scale(3);
     }
     
 }
