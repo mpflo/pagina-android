@@ -56,9 +56,6 @@ a[target="_blank"]:hover:after {
    width: 100%;    
 }
 
-section {
-}
-
 .swiper-button-next,
 .swiper-button-prev {
     font-size: 1.2em;
@@ -84,9 +81,6 @@ section {
     font: var(--fa-font-solid) !important; 
     color: var(--cor-05);
     
-}
-.swiper-button-next:hover:after,
-.swiper-button-prev:hover:after {
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
@@ -225,10 +219,6 @@ nav button.btn-close:focus {
     color: var(--cor-04);
 }
 
-#v1-android {
-    
-}
-
 #v1-android picture img {
     margin: 28px 0;
 }
@@ -236,15 +226,6 @@ nav button.btn-close:focus {
 #criadora-mascote {
     background-color: var(--cor-05);
     color: var(--cor-04);
-}
-
-#criadora-mascote .content-img-wrapper {
-   
-    
-}
-
-#criadora-mascote .content-img-wrapper img {
-    
 }
 
 #ideia h2 {
@@ -263,9 +244,6 @@ nav button.btn-close:focus {
     font: 28px var(--fonte-destaque);
 }
 
-#bugdroid .content-img-wrapper {
-}
-
 #bugdroid .content-img-wrapper img {
     max-width: 304px;
 }
@@ -281,13 +259,6 @@ nav button.btn-close:focus {
 
 #extra .carousel-wrapper {
     max-width: 602px;
-}
-
-#extra .versoes {
-    
-}
-
-#extra .versoes .swiper-slide {
 }
 
 #extra .versoes .swiper-slide .item {
@@ -316,11 +287,6 @@ nav button.btn-close:focus {
     height: 120px;
     object-fit: contain;
     filter: saturate(0%);
-}
-
-
-#extra .versoes .swiper-slide:hover {
-   
 }
 
 #extra .versoes .swiper-slide:hover .item {
@@ -353,10 +319,6 @@ nav button.btn-close:focus {
 #contato {
     background: var(--cor-02);
     color: var(--cor-01);
-}
-
-#contato form {
-    
 }
 
 #contato form input,
@@ -415,7 +377,6 @@ footer a {
     font-family: var(--fonte-destaque);
     color: var(--cor-01) !important;
 }
-footer a:hover {}
 
 @media (min-width: 992px) {
     
@@ -431,24 +392,12 @@ footer a:hover {}
         font-size: 1em;
     }
     
-    #banner {
-        
-    }
-    
     #banner header h1 {
         font-size: 64px;
     }
     
-    #banner video {
-        
-    }
-    
     #v1-android picture img {
         width: 76% !important;      
-    }
-    
-    #criadora-mascote {
-        
     }
     
     #criadora-mascote .content-img-wrapper img {
