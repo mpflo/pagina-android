@@ -36,7 +36,7 @@ img {
 
 a[target="_blank"] {
     display: inline-block;
-    color: #000;
+    color: var(--cor-02);
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -48,7 +48,7 @@ a[target="_blank"]:after {
     bottom: 0;
     left: 0; 
     display: block;
-    background: var(--cor-03);
+    background: var(--cor-04);
     width: 0%;
     height: 2px;
     transition: width ease .5s;
@@ -92,6 +92,60 @@ section {
 
 .swiper-pagination .swiper-pagination-bullet-active {
     background: var(--cor-03);
+}
+
+nav .offcanvas.offcanvas-start {
+    width: 70%;
+}
+
+nav .navbar-nav .nav-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+nav .navbar-nav .nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0; 
+    display: block;
+    background: var(--cor-03);
+    width: 0%;
+    height: 2px;
+    transition: width ease .5s;
+}
+
+nav .navbar-nav .nav-link:hover:after {
+    width: 100%;
+}
+
+nav button.navbar-toggler {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+nav button.navbar-toggler:focus {
+    box-shadow: 0px 0px 0px 3px var(--cor-04);
+}
+
+nav button.navbar-toggler .navbar-toggler-icon {    
+    background-image: none;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav button.navbar-toggler .navbar-toggler-icon:after {
+    content: '\f0c9';
+    font: var(--fa-font-solid);
+    font-size: .980em;
+    color: var(--cor-03);
 }
 
 #banner {
@@ -348,6 +402,10 @@ footer a:hover {}
 
     section {
         min-height: 504px
+    }
+    
+    nav .navbar-nav .nav-link {
+        font-size: 1em;
     }
     
     #banner {
