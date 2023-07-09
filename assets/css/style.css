@@ -296,13 +296,27 @@ section {
 }
 
 #contato form button {
+    position: relative;
     border-radius: 0;
     border: 2px solid #fff;
     background: transparent;
+    text-align: center;
+    width: 100%;
 }
 
-#contato form button:hover {
-    background-color: rgba(255, 255, 255, .2);
+#contato form button:after {
+    position: absolute;
+    content: '';
+    background-color: rgba(255, 255, 255, .1);
+    width: 100%;
+    height: 0%;
+    left: 0;
+    top: 0;
+    transition: height linear 300ms;
+}
+
+#contato form button:hover:after {
+    height: 100%;
 }
 
 footer {
