@@ -127,8 +127,13 @@ section {
 }
 
 #banner .btn-wrapper a {
-    font-size: 44px;
-    color: #A4C327;    
+    display: block;
+    font-size: 2.6em;
+    color: #A4C327; 
+}
+
+#banner .btn-wrapper a:hover {
+    color: var(--cor-05);
 }
 #banner .video-wrapper {
     height: 100%;
