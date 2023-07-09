@@ -267,6 +267,7 @@ nav button.btn-close:focus {
     width: 284px;
     margin: 0 auto;
     border-radius: 28px;
+    cursor: grab; 
 }
 
 #extra .versoes .swiper-slide .item h3 span.nome {
